@@ -49,7 +49,7 @@
         <section class="hero">
             <div class="conteiner hero-section">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button"data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section qualities-section">
@@ -101,9 +101,18 @@
             <div class="conteiner">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="our-work">
-                    <li class="work-item"><img src="./images/what_we_do1.jpg" alt="Виполняемые задачи" width="370"></li>
-                    <li class="work-item"><img src="./images/what_we_do2.jpg" alt="Виполняемые задачи" width="370"></li>
-                    <li class="work-item"><img src="./images/what_we_do3.jpg" alt="Виполняемые задачи" width="370"></li>
+                    <li class="work-item">
+                        <img src="./images/what_we_do1.jpg" alt="Виполняемые задачи" width="370">
+                        <p class="work-text">Десктопные приложения</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/what_we_do2.jpg" alt="Виполняемые задачи" width="370">
+                        <p class="work-text">Мобильные приложения</p>
+                    </li>
+                    <li class="work-item">
+                        <img src="./images/what_we_do3.jpg" alt="Виполняемые задачи" width="370">
+                        <p class="work-text">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
             </section>
@@ -403,7 +412,16 @@
             </div>
         </div>
         
-    </footer>   
-
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-svg" widh=11px height=11px>
+                    <use href="./images/icons-svg.svg#icon-vector"></use>
+                </svg>
+            </button>
+            <script src="./js/modal.js"></script>
+        </div>
+    </div>   
 </body>
 </html>
